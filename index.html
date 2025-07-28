@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <img src="images/your-photo.jpg" alt="Your Photo" class="hero-img" />
+    <h1>Hi, I’m Pavan Sai Reddy Chittemreddy</h1>
+    <p>Data Analyst • Data Engineering • Interactive Dashboards</p>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="grid">
+      <!-- Repeat this block for each project -->
+      <div class="card">
+        <img src="images/project1.png" alt="Project 1 Screenshot" />
+        <h3>Project Title</h3>
+        <button data-modal="modal-project1">View</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Project 1 -->
+  <div id="modal-project1" class="modal">
+    <div class="modal-content">
+      <span class="close" data-modal="modal-project1">×</span>
+      <h3>Project Title</h3>
+      <p>Short description and a <a href="https://github.com/yourusername/project1" target="_blank">GitHub Repo</a>.</p>
+      <img src="images/project1.png" alt="Project 1 Screenshot" />
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About</h2>
+    <p>I build data-driven applications and dashboards to help organizations turn data into actionable insights.</p>
+    <h3>Skills</h3>
+    <ul>
+      <li>SQL</li>
+      <li>Python</li>
+      <li>Power BI</li>
+      <li>Data Engineering</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© Your Name 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

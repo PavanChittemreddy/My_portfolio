@@ -1,0 +1,113 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  background: #222;
+  padding: 0.5em 1em;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  margin: 0;
+}
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4em 1em;
+  background: #f4f4f4;
+}
+.hero-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+/* Portfolio */
+.portfolio {
+  padding: 2em 1em;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1em;
+  text-align: center;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+button {
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: #fff;
+  padding: 2em;
+  max-width: 600px;
+  position: relative;
+}
+.close {
+  position: absolute;
+  top: 0.5em; right: 0.5em;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/* About & Contact */
+.about, .contact {
+  padding: 2em 1em;
+  background: #fafafa;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  max-width: 400px;
+  margin: auto;
+}
+input, textarea {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+button[type="submit"] {
+  background: #222;
+  color: #fff;
+  border: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #222;
+  color: #fff;
+}
