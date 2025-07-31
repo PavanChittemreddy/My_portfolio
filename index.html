@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name — Portfolio</title>
+  <title>Pavan Sai Reddy Chittemreddy — Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -30,11 +30,17 @@
   <section id="portfolio" class="portfolio">
     <h2>Portfolio</h2>
     <div class="grid">
-      <!-- Repeat this block for each project -->
+      <!-- Existing Project Card -->
       <div class="card">
         <img src="images/project1.png" alt="Project 1 Screenshot" />
         <h3>Project Title</h3>
         <button data-modal="modal-project1">View</button>
+      </div>
+      <!-- New Finance Project Card -->
+      <div class="card">
+        <img src="images/heatmap.png" alt="Correlation Heatmap" />
+        <h3>Stock Volatility & Portfolio Optimizer</h3>
+        <button data-modal="modal-finance">Coming Soon</button>
       </div>
     </div>
   </section>
@@ -46,6 +52,16 @@
       <h3>Project Title</h3>
       <p>Short description and a <a href="https://github.com/yourusername/project1" target="_blank">GitHub Repo</a>.</p>
       <img src="images/project1.png" alt="Project 1 Screenshot" />
+    </div>
+  </div>
+
+  <!-- Modal for Finance Project -->
+  <div id="modal-finance" class="modal">
+    <div class="modal-content">
+      <span class="close" data-modal="modal-finance">×</span>
+      <h3>Stock Volatility & Portfolio Optimizer</h3>
+      <p>This case study is in progress—check back soon for interactive charts, optimizer demo, and code!</p>
+      <img src="images/heatmap.png" alt="Correlation Matrix Heatmap Preview" />
     </div>
   </div>
 
@@ -74,7 +90,7 @@
   </section>
 
   <footer>
-    <p>© Your Name 2025</p>
+    <p>© Pavan Sai Reddy Chittemreddy 2025</p>
   </footer>
 
   <script src="script.js"></script>
