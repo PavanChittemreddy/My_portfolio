@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pavan Sai Reddy Chittemreddy — Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <!-- Navigation -->
   <nav>
@@ -32,15 +34,16 @@
     <div class="grid">
       <!-- Existing Project Card -->
       <div class="card">
-        <img src="images/project1.png" alt="Project 1 Screenshot" />
-        <h3>Project Title</h3>
-        <button data-modal="modal-project1">View</button>
+        <img src="images/churn_analysis.jpg.png" alt="Customer Churn Dashboard" />
+        <h3>Customer Churn Analysis</h3>
+        <button data-modal="modal-customer-churn">View</button>
       </div>
-      <!-- New Finance Project Card -->
+
+      <!-- Stock Volatility & Portfolio Optimizer Card -->
       <div class="card">
-        <img src="images/heatmap.png" alt="Correlation Heatmap" />
+        <img src="images/volatility_optimizer.png" alt="volatility_optimizer" />
         <h3>Stock Volatility & Portfolio Optimizer</h3>
-        <button data-modal="modal-finance">Coming Soon</button>
+        <button data-modal="modal-finance">View</button>
       </div>
     </div>
   </section>
@@ -50,18 +53,29 @@
     <div class="modal-content">
       <span class="close" data-modal="modal-customer-churn">×</span>
       <h3>Customer Churn Analysis - Databel</h3>
-      <p>Short description and a <a href="https://github.com/PavanChittemreddy/Customer_churn_analysis_Databel" target="_blank">GitHub Repo</a>.</p>
-      <img src="churn_analysis.jpg" alt="Customer Churn Analysis" />
+      <p>This Tableau project analyzes churn behavior across customer age, contract type, and region. View dashboards
+        and insights in the <a href="https://github.com/PavanChittemreddy/Customer_churn_analysis_Databel"
+          target="_blank">GitHub Repo</a>.</p>
     </div>
   </div>
 
   <!-- Modal for Finance Project -->
-  <div id="modal-finance" class="modal">  
+  <div id="modal-finance" class="modal">
     <div class="modal-content">
       <span class="close" data-modal="modal-finance">×</span>
       <h3>Stock Volatility & Portfolio Optimizer</h3>
-      <p>This case study is in progress—check back soon for interactive charts, optimizer demo, and code!</p>
-      <img src="images/heatmap.png" alt="Correlation Matrix Heatmap Preview" />
+      <p>
+        A full end-to-end case study that:
+        <ul>
+          <li>Fetches 1 year of stock data for AAPL, MSFT, GOOGL, AMZN, TSLA</li>
+          <li>Analyzes correlations, volatility & covariance</li>
+          <li>Simulates 5,000 random portfolios to plot the efficient frontier</li>
+        </ul>
+      </p>
+      <a href="https://github.com/PavanChittemreddy/finance_portfolio_optimizer" target="_blank" class="btn">
+        View Code on GitHub
+      </a>
+      <img src="images/volatility_portfolio copy.png" alt="volatility_portfolio" style="margin-top:1rem;max-width:100%;"/>
     </div>
   </div>
 
