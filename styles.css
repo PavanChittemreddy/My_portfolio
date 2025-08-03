@@ -81,6 +81,51 @@ button {
   cursor: pointer;
 }
 
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  justify-items: center;
+}
+.skill-item {
+  text-align: center;
+}
+.skill-item img {
+  width: 100%;
+  max-width: 60px;
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+.skill-item h6 {
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Certifications Grid */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.cert-item {
+  text-align: center;
+}
+.cert-item img {
+  width:100%;
+  max-width: 320px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+.cert-item h6 {
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 600;
+}
+
 /* About & Contact */
 .about, .contact {
   padding: 2em 1em;
